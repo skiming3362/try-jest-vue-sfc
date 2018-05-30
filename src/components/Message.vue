@@ -4,7 +4,12 @@
 
 <script>
 export default {
-  props: ["msg"]
+  props: ["msg"],
+  methods: {
+    testMethod() {
+      console.log(this.msg)
+    }
+  }
 }
 </script>
 
