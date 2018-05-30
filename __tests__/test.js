@@ -1,7 +1,7 @@
-import { mount } from '@vue/test-utils'
+import { mount, shallowMount } from '@vue/test-utils'
 import App from '@/App'
 
-const wrapper = mount(App)
+const wrapper = shallowMount(App)
 describe('Component', () => {
   it('是一个 Vue 实例', () => {
     expect(wrapper.isVueInstance()).toBeTruthy()
